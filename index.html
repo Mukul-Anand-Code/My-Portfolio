@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mukul Anand | Web Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script type="module" src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="#home" class="logo">Mukul Anand<span>.</span></a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-btn" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+
+        <button class="theme-btn" id="theme-btn" aria-label="Switch to night mode">
+            🌙
+        </button>
+
+
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero" id="home">
+
+            <div class="hero-text">
+                <p class="intro-label">HELLO! I'M MUKUL 👋</p>
+
+                <h1>
+                    I Build <span>Web</span><br>
+                    Experiences.
+                </h1>
+
+                <p class="hero-description">
+                    I'm a Web Developer passionate about building modern,
+                    responsive, and user-friendly websites. I enjoy learning
+                    new technologies and turning ideas into interactive
+                    digital experiences.
+                </p>
+
+
+                <a href="Mukul Web Developer Resume.pdf" class="resume-btn" download>
+                    Download CV ↓
+                </a>
+
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work ↗
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Let's Talk!
+                    </a>
+                </div>
+
+                <p class="hero-note">DESIGNING IDEAS INTO REALITY ✦</p>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card card-yellow">
+                    <span>✦</span>
+                    CREATIVE
+                </div>
+
+                <div class="developer-illustration">
+                    <!-- Add your cartoon image here later -->
+                    <div class="avatar-placeholder">👨🏻‍💻</div>
+                </div>
+
+                <div class="hero-card card-pink">
+                    <span>✳</span>
+                    CODE & CREATE
+                </div>
+
+                <div class="doodle doodle-one">✳</div>
+                <div class="doodle doodle-two">✦</div>
+            </div>
+
+        </section>
+
+        <!-- More sections will be added step by step -->
+
+
+        <!-- About Me Section -->
+        <section class="about" id="about">
+
+            <div class="about-heading">
+                <span class="section-label-design"></span>
+                <span class="section-label">A LITTLE ABOUT ME</span>
+                <span class="section-label-design2"></span>
+                <h2>Who Am I<span>?</span></h2>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-card">
+                    <h3>Hey, I'm Mukul! 👋</h3>
+
+                    <p>
+                        I'm a Web Developer passionate about building
+                        modern, responsive, and user-friendly websites.
+                        I enjoy learning new technologies and turning
+                        ideas into interactive digital experiences.
+                    </p>
+
+                    <p>
+                        I work with HTML, CSS, JavaScript, and React
+                        to create engaging web projects. I'm always
+                        curious to learn, experiment, and improve my skills.
+                    </p>
+                </div>
+
+                <div class="about-details">
+
+                    <div class="detail-card">
+                        <span>🎓</span>
+                        <div>
+                            <h3>Education</h3>
+                            <p>BCA — Mahanand Daya University</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <span>🎨</span>
+                        <div>
+                            <h3>Creative Background</h3>
+                            <p>Graphic design internship and freelance projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <span>💻</span>
+                        <div>
+                            <h3>My Goal</h3>
+                            <p>Building useful web experiences and growing as a developer.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+
+            <div class="skills-heading">
+                <span class="section-label-design"></span>
+                <span class="section-label">WHAT I WORK WITH</span>
+                <span class="section-label-design2"></span>
+                <h2>My <span>Skills</span></h2>
+                <p>Tools and technologies I use to bring ideas to life.</p>
+            </div>
+
+            <div class="skills-grid" id="staticSkills">
+
+                <div class="skill-card card1">
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML5</h3>
+                    <p>Web Page Structure</p>
+                </div>
+
+                <div class="skill-card card2">
+                    <div class="skill-icon">🎨</div>
+                    <h3>CSS3</h3>
+                    <p>Styling & Responsive UI</p>
+                </div>
+
+                <div class="skill-card card3">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" role="img"
+                            aria-label="JavaScript logo">
+                            <rect width="24" height="24" rx="2" fill="#F7DF1E" />
+                            <path fill="#000"
+                                d="M6.3 19.9 8.1 18.8c.35.62.67 1.14 1.43 1.14.73 0 1.19-.29 1.19-1.42v-7.7h2.22v7.73c0 2.3-1.35 3.35-3.32 3.35-1.78 0-2.81-.92-3.33-2m7.8-.24 1.8-1.04c.47.77 1.08 1.34 2.16 1.34.91 0 1.49-.45 1.49-1.08 0-.75-.6-1.02-1.6-1.46l-.55-.24c-1.6-.68-2.66-1.53-2.66-3.33 0-1.66 1.27-2.93 3.25-2.93 1.41 0 2.42.49 3.15 1.77l-1.73 1.11c-.38-.68-.79-.95-1.42-.95-.65 0-1.06.41-1.06.95 0 .66.41.93 1.36 1.34l.55.24c1.89.81 2.95 1.63 2.95 3.48 0 1.99-1.56 3.08-3.66 3.08-2.05 0-3.38-.98-4.03-2.28"
+                                transform="translate(-1 -1) scale(.95)" />
+                        </svg>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Interactive Experiences</p>
+                </div>
+
+                <div class="skill-card card4">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>React JS</h3>
+                    <p>Component-Based UI</p>
+                </div>
+
+                <div class="skill-card card5">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"
+                            fill="#339933" role="img" aria-label="Node.js logo">
+                            <path
+                                d="M11.98.2a1.7 1.7 0 0 0-.84.23L1.02 6.1A1.7 1.7 0 0 0 .17 7.57v8.86c0 .61.33 1.18.85 1.48l10.12 5.67c.52.29 1.16.29 1.68 0l10.12-5.67c.52-.3.85-.87.85-1.48V7.57c0-.61-.33-1.18-.85-1.48L12.82.43a1.7 1.7 0 0 0-.84-.23m0 1.6c.06 0 .12.02.18.05l10.12 5.67c.11.06.18.18.18.3v8.86c0 .12-.07.24-.18.3l-10.12 5.67a.36.36 0 0 1-.36 0L1.68 16.98a.35.35 0 0 1-.18-.3V7.82c0-.12.07-.24.18-.3L11.8 1.85a.36.36 0 0 1 .18-.05" />
+                            <path
+                                d="M12.02 5.4c-.1 0-.2.03-.29.08L5.9 8.85a.57.57 0 0 0-.29.5v5.3c0 .2.11.4.29.5l5.83 3.37c.18.1.4.1.58 0l5.83-3.37a.57.57 0 0 0 .29-.5V9.35c0-.2-.11-.4-.29-.5l-5.83-3.37a.57.57 0 0 0-.29-.08m0 1.33 5.26 3.04v4.46l-5.26 3.04-5.26-3.04V9.77z" />
+                        </svg>
+                    </div>
+                    <h3>Node JS</h3>
+                    <p>JavaScript Runtime</p>
+                </div>
+
+                <div class="skill-card card6">
+                    <div class="skill-icon">🖌️</div>
+                    <h3>Photoshop</h3>
+                    <p>Graphic Design</p>
+                </div>
+
+                <div class="skill-card card7">
+                    <div class="skill-icon">✒️</div>
+                    <h3>Illustrator</h3>
+                    <p>Vector Design</p>
+                </div>
+
+                <div class="skill-card card8">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"
+                            fill="#F05032" aria-label="Git logo" role="img">
+                            <path
+                                d="M23.546 10.93 13.067.454a1.55 1.55 0 0 0-2.19 0L8.7 2.63l2.76 2.76a1.84 1.84 0 0 1 2.33 2.34l2.66 2.66a1.84 1.84 0 1 1-1.1 1.1l-2.48-2.48v6.52a1.84 1.84 0 1 1-1.51-.05V8.9a1.84 1.84 0 0 1-1-2.4L7.64 3.78.454 10.97a1.55 1.55 0 0 0 0 2.19l10.48 10.48a1.55 1.55 0 0 0 2.19 0l10.42-10.52a1.55 1.55 0 0 0 0-2.19" />
+                        </svg>
+                    </div>
+                    <h3>Git</h3>
+                    <p>Version Control & Code Management</p>
+                </div>
+
+            </div>
+
+            <div class="skills-grid" id="dynamicSkills"></div>
+
+        </section>
+
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+
+            <div class="projects-heading">
+                <span class="section-label-design"></span>
+                <span class="section-label">THINGS I'VE BUILT</span>
+                <span class="section-label-design2"></span>
+
+                <h2>My <span>Projects</span></h2>
+                <p>Some things I've created while learning and building for the web.</p>
+            </div>
+
+            <div class="projects-grid" id="staticProjects">
+
+                <!-- Car Race Project -->
+                <article class="project-card">
+                    <div class="project-visual car-visual">
+                        <span>🏎️</span>
+                        <span>🏁</span>
+                    </div>
+
+                    <div class="project-info">
+                        <span class="project-type">JAVASCRIPT GAME</span>
+                        <h3>Car Race Game</h3>
+
+                        <p>
+                            A fun browser game featuring car movement,
+                            collision detection, and game-over logic.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="https://car-dodge.netlify.app/" target="_blank" class="project-link">View Project ↗</a>
+                    </div>
+                </article>
+
+                <!-- Stone Paper Scissors Project -->
+                <article class="project-card">
+                    <div class="project-visual sps-visual">
+                        <span>✊</span>
+                        <span>✋</span>
+                        <span>✌️</span>
+                    </div>
+
+                    <div class="project-info">
+                        <span class="project-type">JAVASCRIPT GAME</span>
+                        <h3>Stone Paper Scissors</h3>
+
+                        <p>
+                            An interactive game with score tracking,
+                            countdown timers, and round-based gameplay.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="https://stone-paper-scissor-fungame.netlify.app/" target="_blank"
+                            class="project-link">View Project ↗</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="projects-grid" id="dynamicProjects"></div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+
+            <div class="contact-heading">
+                <span class="section-label-design"></span>
+                <span class="section-label">LET'S CONNECT</span>
+                <span class="section-label-design2"></span>
+                <h2>Get In <span>Touch</span></h2>
+                <p>Have a project idea or an opportunity? I'd love to hear from you.</p>
+            </div>
+
+            <div class="contact-content">
+
+                <div class="contact-info">
+                    <h3>Let's work together! 💜</h3>
+
+                    <p>
+                        I'm always interested in learning, building
+                        creative projects, and exploring new opportunities.
+                    </p>
+
+                    <a class="contact-email" href="mailto:mukulbro12@gmail.com">
+                        ✉️ mukulbro12@gmail.com
+                    </a>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Mukul-Anand-Code" target="_blank" rel="noopener noreferrer">GitHub
+                            ↗</a>
+
+                        <a href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank"
+                            rel="noopener noreferrer">LinkedIn ↗</a>
+
+
+                        <a href="https://wa.me/919971774537?text=Hello%20Mukul!" target="_blank"
+                            rel="noopener noreferrer">WhatsApp ↗</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+
+                    <label for="contact-name">Your Name</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Enter your name" required />
+
+                    <label for="contact-email">Your Email</label>
+                    <input type="email" id="contact-email" name="email" placeholder="Enter your email" required />
+
+                    <label for="contact-message">Your Message</label>
+                    <textarea id="contact-message" name="message" rows="5" placeholder="Write your message..."
+                        required></textarea>
+
+                    <button type="submit" class="contact-submit">
+                        Send Message ↗
+                    </button>
+
+
+                    <div class="form-message" id="form-message"></div>
+
+
+                    <p class="form-note">
+                        This form needs an email service to deliver messages.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+</body>
+
+</html>
